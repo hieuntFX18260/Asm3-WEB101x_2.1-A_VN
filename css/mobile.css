@@ -1,0 +1,75 @@
+/* Các style dùng chung cho cả 3 kích cỡ màn hình để ở trong file style.css*/
+
+/* Mobile: Less than 768px */
+@media (max-width: 767px) {
+  /* ----------------------------------------------------------------------------- */
+  /* 2. Phần Navbar */
+  #navbar--middle--item {
+    /* Ẩn phần thông tin giữa Navbar đi ở size Mobile*/
+    display: none;
+  }
+
+  #navbar--container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 3.Phần Thông tin Cá Nhân */
+  #about--box {
+    flex-direction: column; /*Ở cỡ mobile đổi hướng flex sang chiều dọc*/
+  }
+
+  #about--target {
+    padding: 20px;
+    width: 100%;
+  }
+
+  #about--info {
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 4. Phần Thông tin nghề nghiệp */
+  /*Các style của phần này chung cho cả 3 kích thước màn hình nên ta để ở trong file style.css */
+
+  /* ----------------------------------------------------------------------------- */
+  /* 5. Phần Chứng chỉ - Giải thưởng */
+  #certificate .container {
+    /* Ở phần mobile, ta tạo grid gồm 1 cột và 4 dòng*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 1fr 1fr;
+
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+
+  .certificate-item {
+    flex-direction: column;
+    align-items: start;
+
+    padding-bottom: 20px;
+  }
+
+  /* Style cho Ảnh của chứng chỉ (Ở size Mobile ta để 100%) */
+  #certificate img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 6. Phần Dự án */
+  /* Ở phần Mobile, ta tạo một grid với 1 cột*/
+  #project .container {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 7. Phần Footer */
+  #footer .container {
+    gap: 20px;
+  }
+}

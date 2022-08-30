@@ -1,0 +1,82 @@
+/* Các style dùng chung cho cả 3 kích cỡ màn hình để ở trong file style.css*/
+
+/* Tablet: From 768px to 991px */
+@media (max-width: 991px) {
+  /* ----------------------------------------------------------------------------- */
+  /* 2. Phần Navbar */
+  #navbar--middle--item {
+    /* Ẩn phần thông tin giữa Navbar đi ở size Tablet*/
+    display: none;
+  }
+
+  #navbar--container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 3.Phần Thông tin Cá Nhân */
+  #about--box {
+    flex-direction: row;
+  }
+
+  #about--target {
+    padding: 30px;
+    width: 50%;
+  }
+
+  #about--info {
+    padding: 30px;
+    width: 50%;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 4. Phần Thông tin nghề nghiệp */
+  /*Các style của phần này chung cho cả 3 kích thước màn hình nên ta để ở trong file style.css */
+
+  /* ----------------------------------------------------------------------------- */
+  /* 5. Phần Chứng chỉ - Giải thưởng */
+  #certificate .container {
+    /* Ở phần tablet, ta tạo grid gồm 1 cột và 3 dòng*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr;
+
+    row-gap: 20px;
+  }
+
+  .certificate-item {
+    flex-direction: column;
+    align-items: start;
+
+    padding-bottom: 20px;
+  }
+
+  /* Style cho Ảnh của chứng chỉ (Ở size Tablet ta để 100%) */
+  #certificate img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 6. Phần Dự án */
+  /* Ở phần Tablet, ta giữ nguyên cấu trúc grid 3 cột*/
+
+  /* Style lại các gutter của grid cho phù hợp với size của Tablet*/
+  #project .container {
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+
+  /* Style cho phần Tiêu đề của dự án cho phù hợp với size của Tablet*/
+  .project-title {
+    font-size: 14px;
+    padding: 10px 2px;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 7. Phần Footer */
+  #footer .container {
+    gap: 30px;
+  }
+}

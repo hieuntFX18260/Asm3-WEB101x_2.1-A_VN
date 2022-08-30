@@ -1,0 +1,45 @@
+/* Các style dùng chung cho cả 3 kích cỡ màn hình để ở trong file style.css*/
+
+/* Laptop: More than 992px */
+@media (min-width: 992px) {
+  /* ----------------------------------------------------------------------------- */
+  /* 2. Phần Navbar */
+  #navbar--middle--item {
+    display: inline-block;
+    border-left: 2px solid var(--dark-grey-color);
+    border-right: 2px solid var(--dark-grey-color);
+  }
+
+  #navbar--container {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 3. Phần Thông tin Cá Nhân */
+  #about--box {
+    flex-direction: row;
+  }
+
+  #about--target {
+    padding: 40px 40px 40px 80px;
+    width: 30%;
+  }
+
+  #about--info {
+    padding: 40px 80px 40px 40px;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* 4. Phần Thông tin nghề nghiệp */
+  /*Các style của phần này chung cho cả 3 kích thước màn hình nên ta để ở trong file style.css */
+
+  /* ----------------------------------------------------------------------------- */
+  /* 5. Phần Chứng chỉ - Giải thưởng*/
+  /* Style cho Ảnh của chứng chỉ (Ở size Laptop ta để 50%) */
+  #certificate img {
+    width: 50%;
+    height: auto;
+  }
+}

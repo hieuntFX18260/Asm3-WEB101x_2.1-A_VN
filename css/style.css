@@ -1,0 +1,346 @@
+/* Set-up màu sắc dùng cho project */
+:root {
+  --primary-color: #047aed;
+  --dark-grey-color: #dee2e6;
+  --light-grey-color: #f1f3f5;
+}
+
+.main--color {
+  color: var(--primary-color);
+}
+
+.dark--grey--color {
+  color: var(--dark-grey-color);
+}
+
+.light--grey--color {
+  color: var(--light-grey-color);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* 2. Phần Navbar */
+#navbar--container {
+  background-color: #fff;
+}
+
+#navbar--container a:hover {
+  /* Hiệu ứng khi hover vào các link ở Navbar */
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: transform 0.1s;
+}
+/* ----------------------------------------------------------------------------- */
+/* 3. Phần Thông tin Cá Nhân */
+#about--target {
+  background-color: var(--light-grey-color);
+}
+
+#about--info {
+  background-color: var(--dark-grey-color);
+}
+
+#about--info ul {
+  list-style: none; /* Bỏ bullet points của list */
+  line-height: 2;
+}
+
+#about--info i {
+  font-size: 20px; /* Cho icon to lên 1 chút */
+}
+
+/* ----------------------------------------------------------------------------- */
+/* 4. Phần Thông tin nghề nghiệp */
+/* Để tạo reponsive-website effect cho phần này, ta sử dụng các Breakpoint
+của Bootstrap Grid, bằng cách thêm vào các class ở bên file index.html:
+Tạo tạo container có 12 cột, với 6 phần nội dung: Kinh nghiệm, Học vấn, Hoạt động, Sở thích, Ngôn ngữ, Kỹ năng:
++ col-lg-4: Chia màn hình làm 3 cột chứa các phần nội dung ở cỡ lg cho Laptop 
++ col-md-6: Chia màn hình làm 2 cột chứa các phần nội dung ở cỡ md cho Tablet
++ Còn lại cỡ sm cho Mobile, các phần nội dung sẽ tự động đặt trong 1 cột chồng lên nhau */
+#job-info--box {
+  border: 2px solid var(--dark-grey-color);
+}
+#job-info--box i {
+  font-size: 40px; /* Cho icon to lên 1 chút */
+}
+
+#job-info--box ul {
+  list-style: none;
+  line-height: 2;
+}
+
+#job-info--box li {
+  margin-bottom: 30px;
+  position: relative; /* Để thay đổi vị trí cho bullet point */
+}
+/*Dùng pseudo-element để đổi màu và kích thước cho bullet point 
+trong unordered-list*/
+#job-info--box li::before {
+  content: "\2022"; /* \2022 là CSS Code/unicode cho bullet point */
+  color: var(--primary-color);
+  font-size: 40px;
+
+  position: absolute; /* Để thay đổi vị trí cho bullet point */
+  top: -28px;
+  left: -22px;
+}
+
+/* Style cho chữ "Hiện tại" trong phần Kinh Nghiệm */
+#present {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* Style cho phần Sở thích */
+#hobby-item-box {
+  /* Tạo 1 grid 4 cột bằng nhau chứa 4 hobby-item */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: start;
+
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#hobby-item {
+  /* Mỗi một hobby-item sẽ chứa 1 icon ở trên và 1 cái tên bên dưới, nên ta tạo flexbox chiều dọc */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Thay đổi kiểu cho tên của các hobby-item */
+#hobby-item p {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Thay đổi kiểu cho icon của các hobby-item */
+#hobby-item i {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+/* Tạo 1 hộp chứa hình vuông bao quanh các icon của hobby-item để chuyển nó thành đường tròn bảo quanh icon */
+#hobby-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  padding: 24px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Style chung cho 2 phần Ngôn Ngữ và Kỹ Năng: */
+.language-item-box,
+.skill-item-box {
+  grid-column: 1/-1;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.language-item,
+.skill-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+/* Tạo riêng 1 flexbox để cho các scale-bar dàn hàng ngang ra */
+.scale-box {
+  display: flex;
+}
+
+/* Tạo màu và kích thước cho các scale-bar */
+.scale-bar {
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 55px;
+}
+.scale-bar--blue {
+  background-color: var(--primary-color);
+}
+.scale-bar--grey {
+  background-color: var(--dark-grey-color);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* 5. Phần Chứng chỉ - Giải thưởng */
+#certificate .container {
+  /* Tạo grid gồm 2 cột cho phần này*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  row-gap: 60px;
+  background-color: var(--light-grey-color);
+}
+
+#certificate h3 {
+  grid-column: 1/-1;
+  margin-bottom: 0px;
+}
+
+/* Tạo flexbox chứa Ảnh của chứng chỉ và Thông tin của chứng chỉ*/
+.certificate-item {
+  display: flex;
+  border-bottom: 2px solid #d6c08d; /*Tạo border giống thiết kế */
+
+  padding-bottom: 60px; /* Tạo padding-bottom để đẩy cái border-bottom xuống dưới*/
+}
+
+.certificate-item:last-child {
+  /* Bỏ border của cái item cuối đi*/
+  border-bottom: none;
+}
+
+/* Style cho phần Thông tin của chứng chỉ*/
+.certificate-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-left: 20px;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Style cho Tiêu đề của chứng chỉ*/
+.certificate-text p:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* 6. Phần Dự án */
+#project .container {
+  /* Tạo một grid với 3 cột*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+#project h3 {
+  grid-column: 1/-1;
+  justify-self: start;
+}
+
+/* Mỗi cột là một flex-box theo chiều dọc*/
+.project-col {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid var(--dark-grey-color);
+}
+
+#project img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--dark-grey-color);
+}
+
+/* Style cho phần Tiêu đề của dự án*/
+.project-title {
+  padding: 15px 10px;
+}
+
+/* Style cho phần Thông tin của dự án*/
+.project-info {
+  padding: 15px 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* Style cho năm 2021 trong phần Thông tin của dự án */
+.project-info--year {
+  background-color: var(--primary-color);
+  color: #fff;
+
+  padding: 10px 10px;
+  border-radius: 18px;
+}
+
+/* Style cho Icon trong phần Thông tin của dự án*/
+.project-info i {
+  font-size: 22px;
+}
+
+/* Style cho phần Mô tả, Nhiệm vụ và Công nghệ của dự án*/
+.project-description,
+.project-duty,
+.project-technology {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+
+  padding: 15px 10px 15px 5px;
+  column-gap: 10px;
+
+  line-height: 1.6;
+}
+
+/* Tạo border ngăn cách các phần */
+.project-title,
+.project-info,
+.project-description,
+.project-duty {
+  border-bottom: 1px solid var(--dark-grey-color);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* 7. Phần Footer */
+#footer .container {
+  background-color: var(--light-grey-color);
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+#footer i {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.footer-item-box {
+  display: flex;
+  align-items: center;
+}
+
+.footer-item-box a {
+  text-decoration: none;
+}
+
+.footer-item-box a:link,
+.footer-item-box a:visited {
+  color: #000;
+}
+
+.footer-item-box a:hover,
+.footer-item-box a:active {
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* 8. Phần Nâng cao */
+/* Tạo hiệu ứng cho để mỗi khi ta trỏ chuột vào ảnh để truy cập trang của Dự án, ảnh của các Dự án sẽ hiện lớn lên và có bóng */
+.project-col img:hover {
+  transform: scale(1.06);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}

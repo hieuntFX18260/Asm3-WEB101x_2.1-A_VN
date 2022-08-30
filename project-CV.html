@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự án: CV Cá Nhân</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Link with the css file -->
+    <link rel="stylesheet" href="style-advanced.css" />
+  </head>
+  <body>
+    <!-- Container này để căn giữa màn hình -->
+    <div class="container">
+      <!-- Container-inner này để chứa 3 cột chính của layout-->
+      <div id="container-inner" class="bg-primary row p-3">
+        <!-- Cột chính 1----------------------------------------------------------------------------- -->
+        <div
+          id="main-col-1"
+          class="col-lg-6 d-flex flex-column gap-3 bg-primary"
+        >
+          <!-- GOALS -->
+          <div class="row col-upper-part">
+            <div class="row bg-light my-2 mx-1 gap-2 pb-4">
+              <div class="col-12 py-2">
+                <h4
+                  class="fw-bold mb-0 pb-3 text-primary border-bottom border-dark"
+                >
+                  Goals
+                </h4>
+              </div>
+              <!-- Goal 1 -->
+              <div class="col-12 d-flex gap-1 py-2 border-bottom">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <i class="bi bi-flag goals-icon"></i>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="py-1">
+                    <p class="fw-bold mb-0 text-primary">
+                      XÂY DỰNG TRANG WEB CV CÁ NHÂN
+                    </p>
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Impedit, beatae!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Goal 2 -->
+              <div class="col-12 d-flex gap-1 py-2 border-bottom">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <i class="bi bi-flag goals-icon"></i>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="py-1">
+                    <p class="fw-bold mb-0">Goal 2</p>
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Impedit, beatae!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Goal 3 -->
+              <div class="col-12 d-flex gap-1 py-2 border-bottom">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <i class="bi bi-flag goals-icon"></i>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="py-1">
+                    <p class="fw-bold mb-0">Goal 3</p>
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Impedit, beatae!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------- -->
+          <!-- SCOPES -->
+          <div class="row col-below-part">
+            <div class="row bg-light my-2 mx-1 gap-2 pb-4">
+              <div class="col-12 py-2">
+                <h4
+                  class="fw-bold mb-0 pb-3 text-primary border-bottom border-dark"
+                >
+                  Scopes
+                </h4>
+              </div>
+              <!-- IN & OUT -->
+              <div
+                class="col-12 d-flex flex-lg-row flex-md-row flex-column text-wrap"
+              >
+                <!-- IN -->
+                <div class="col-lg-6 col-md-6 d-flex flex-column pe-3">
+                  <p class="lead fw-bold">IN</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <!-- OUT -->
+                <div class="col-lg-6 col-md-6 d-flex flex-column pe-3">
+                  <p class="lead fw-bold">OUT</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột chính 2----------------------------------------------------------------------------- -->
+        <div
+          id="main-col-2"
+          class="col-lg-3 d-flex flex-column gap-3 bg-primary"
+        >
+          <!-- TEAM -->
+          <div class="row col-upper-part">
+            <div class="row bg-light my-2 mx-1 gap-2 pb-4">
+              <div class="col-12 py-2">
+                <h4
+                  class="fw-bold mb-0 pb-3 text-primary border-bottom border-dark"
+                >
+                  Team
+                </h4>
+              </div>
+              <!-- Tạo 1 row chứa cho 2 nhóm Member, và ta chia 2 nhóm này mỗi nhóm chiếm 6 cột ở cỡ md -->
+              <div class="row">
+                <!-- Cho Member 01 và 02 vào 1 div -->
+                <div class="col-lg-12 col-md-6">
+                  <!-- Member 01 -->
+                  <div class="col-12 d-flex gap-1 py-2">
+                    <div
+                      class="col-lg-3 col-md-3 col-sm-0 d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="bi bi-person-fill team-icon d-none d-md-block d-lg-block"
+                      ></i>
+                    </div>
+                    <div class="col-9 d-flex align-items-center">
+                      <div class="py-1">
+                        <p class="fw-bold mb-0">Member 01</p>
+                        <p class="mb-0">Name: ...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Member 02 -->
+                  <div class="col-12 d-flex gap-1 py-2">
+                    <div
+                      class="col-lg-3 col-md-3 col-sm-0 d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="bi bi-person-fill team-icon d-none d-md-block d-lg-block"
+                      ></i>
+                    </div>
+                    <div class="col-9 d-flex align-items-center">
+                      <div class="py-1">
+                        <p class="fw-bold mb-0">Member 02</p>
+                        <p class="mb-0">Name: ...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Cho Member 03 và 04 vào 1 div -->
+                <div class="col-lg-12 col-md-6">
+                  <!-- Member 03 -->
+                  <div class="col-12 d-flex gap-1 py-2">
+                    <div
+                      class="col-lg-3 col-md-3 col-sm-0 d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="bi bi-person-fill team-icon d-none d-md-block d-lg-block"
+                      ></i>
+                    </div>
+                    <div class="col-9 d-flex align-items-center">
+                      <div class="py-1">
+                        <p class="fw-bold mb-0">Member 03</p>
+                        <p class="mb-0">Name: ...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Member 04 -->
+                  <div class="col-12 d-flex gap-1 py-2">
+                    <div
+                      class="col-lg-3 col-md-3 col-sm-0 d-flex align-items-center justify-content-center"
+                    >
+                      <i
+                        class="bi bi-person-fill team-icon d-none d-md-block d-lg-block"
+                      ></i>
+                    </div>
+                    <div class="col-9 d-flex align-items-center">
+                      <div class="py-1">
+                        <p class="fw-bold mb-0">Member 04</p>
+                        <p class="mb-0">Name: ...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------- -->
+          <!-- PRIMARY -->
+          <div class="row col-below-part">
+            <div class="row bg-light my-2 mx-1 gap-2 pb-4">
+              <div class="col-12 py-2">
+                <h4
+                  class="fw-bold mb-0 pb-3 text-primary border-bottom border-dark"
+                >
+                  Primary
+                </h4>
+              </div>
+              <!-- ? -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <i class="bi bi-question-circle-fill primary-icon"></i>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="py-1">
+                    <p class="mb-0">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ? -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <i class="bi bi-question-circle-fill primary-icon"></i>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="py-1">
+                    <p class="mb-0">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột chính 3----------------------------------------------------------------------------- -->
+        <div id="main-col-3" class="col-lg-3 bg-primary">
+          <!-- TIMELINE -->
+          <div class="row h-100">
+            <div class="row bg-light my-2 mx-1 gap-2 pb-5">
+              <div class="col-12 py-2">
+                <h4
+                  class="fw-bold mb-0 pb-3 text-primary border-bottom border-dark"
+                >
+                  Timeline
+                </h4>
+              </div>
+              <!-- 01 -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="icon-number-box">01</div>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="timeline-detail py-1">
+                    <p class="fw-bold mb-0">Project Start</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 02 -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="icon-number-box">02</div>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="timeline-detail py-1">
+                    <p class="fw-bold mb-0">Project Date</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 03 -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="icon-number-box">03</div>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="timeline-detail py-1">
+                    <p class="fw-bold mb-0">Project Date</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 04 -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="icon-number-box">04</div>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="timeline-detail py-1">
+                    <p class="fw-bold mb-0">Project Date</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 05 -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="icon-number-box">05</div>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="timeline-detail py-1">
+                    <p class="fw-bold mb-0">Project Date</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 06 -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="icon-number-box">06</div>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="timeline-detail py-1">
+                    <p class="fw-bold mb-0">Project Date</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 07 -->
+              <div class="col-12 d-flex gap-1 py-2">
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="icon-number-box">07</div>
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                  <div class="timeline-detail py-1">
+                    <p class="fw-bold mb-0">Project Date</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundles -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

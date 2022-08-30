@@ -1,0 +1,38 @@
+/* Cột 1 style */
+.goals-icon {
+  font-size: 40px;
+}
+
+/* Cột 2 style */
+.team-icon,
+.primary-icon {
+  font-size: 40px;
+}
+
+/* Cột 3 style */
+.icon-number-box {
+  background-color: rgb(123, 69, 199);
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  font-weight: bold;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-detail {
+  border-bottom: 1px dashed rgb(87, 185, 218);
+}
+
+/* Chia tỷ lệ height cho cột 1 và 2 */
+.col-upper-part {
+  height: 55%;
+}
+.col-below-part {
+  height: 45%;
+}
